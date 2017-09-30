@@ -15,7 +15,7 @@ type SecurityList struct {
 	// The OCID of the compartment that contains the security list
 	CompartmentID string `json:"compartmentId,omitempty"`
 	// A user-friendly name
-	DisplayName string `json:"displayName",omitempty`
+	DisplayName string `json:"displayName,omitempty"`
 	// The OCID of the SecurityList
 	ID string `json:"id,omitempty"`
 	// Rules for allowing egress IP packets
@@ -27,12 +27,12 @@ type SecurityList struct {
 	// The date and time the instance was created (RFC3339)
 	TimeCreated string `json:"timeCreated,omitempty"`
 	// The OCID of the VCN
-	VcnID string `json:"vcnId",omitempty`
+	VcnID string `json:"vcnId,omitempty"`
 }
 
 type SecurityListUpdate struct {
 	// A user-friendly name
-	DisplayName string `json:"displayName",omitempty`
+	DisplayName string `json:"displayName,omitempty"`
 	// Rules for allowing egress IP packets
 	EgressSecurityRules *[]EgressSecurityRule `json:"egressSecurityRules"`
 	// Rules for allowing ingress IP packets
